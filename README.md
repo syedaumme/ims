@@ -73,7 +73,7 @@ A production-grade incident management system that ingests high-volume failure s
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/ims-zeotap.git
+git clone [https://github.com/YOUR_USERNAME/ims-zeotap.git](https://github.com/syedaumme/ims.git)
 cd ims-zeotap
 
 # 2. Start everything (MongoDB + Redis + Backend + Frontend)
