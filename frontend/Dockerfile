@@ -1,14 +1,7 @@
-FROM node:20-alpine AS build
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY public ./public
-COPY src ./src
-ENV REACT_APP_API_URL=http://localhost:4000/api
-RUN npm run build
-
 FROM nginx:alpine
-COPY --from=build /app/build /usr/share/nginx/html
+# Copy your local build folder
+COPY build /usr/share/nginx/html
+# Copy the new config file you just made
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
