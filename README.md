@@ -1,6 +1,5 @@
 # ⚡ Incident Management System (IMS)
 
-**Zeotap SRE Intern Assignment** — Syeda  
 A production-grade incident management system that ingests high-volume failure signals, debounces them into work items, and provides a workflow-driven UI to track incidents to closure with mandatory Root Cause Analysis.
 
 ---
@@ -385,5 +384,3 @@ This file documents the approach taken, as required by submission guidelines.
 - MTTR stored as integer minutes on the RCA object, not computed on read
 
 ---
-
-*GitHub repository: [ADD LINK HERE]*
