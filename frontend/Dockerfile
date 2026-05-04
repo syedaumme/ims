@@ -1,7 +1,7 @@
 FROM node:20-alpine AS build
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 COPY public ./public
 COPY src ./src
 ENV REACT_APP_API_URL=http://localhost:4000/api
